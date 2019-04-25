@@ -7,7 +7,7 @@ def main():
     serverSocket.listen(1)
     print ('the web server is running on port:',serverPort)
     while True:
-          print('Ready to serve...')
+          print ('Ready to serve...')
           connectionSocket, addr = serverSocket.accept()
     try:
         message = connectionSocket.recv(1024)
