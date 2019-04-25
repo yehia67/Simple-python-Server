@@ -1,3 +1,4 @@
+
 from socket import  *
 def main():
     serverPort=80
@@ -23,5 +24,6 @@ def main():
             connectionSocket.close()
     except IOError:
          connectionSocket.send('\nHTTP/1.1 404 Not Found\n\n')
-         connectionSocket.send('\nHTTP/1.1 404 Not Found\n\n')  
-      
+         connectionSocket.send('\nHTTP/1.1 404 Not Found\n\n') 
+main()
+
