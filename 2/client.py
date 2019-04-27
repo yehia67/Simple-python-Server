@@ -1,11 +1,11 @@
 from socket import *
 serverIP = "127.0.1.1"
-serverPort = 5430
+serverPort = 5120
 clientSocket = socket(AF_INET, SOCK_STREAM)
 try:
     clientSocket.connect((serverIP, serverPort))
     print "\nConnection Successful!"
-    filename = "severContent.txt"
+    filename = "wrongname.txt"
     clientSocket.send("GET /" + filename + " HTTP/1.1\r\n" +
                       "Host: " + gethostbyname(gethostname()) + ":" + str(clientSocket.getsockname()[1]) + "\r\n\r\n")
     print "\n\n---------------HTTP RESPONSE---------------\n"
