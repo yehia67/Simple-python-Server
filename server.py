@@ -2,7 +2,7 @@
 from socket import  *
 import threading
 def main():
-    serverPort=9001
+    serverPort=81
     serverSocket = socket(AF_INET, SOCK_STREAM)
     serverSocket.bind(('',serverPort))
     serverSocket.listen(1)
